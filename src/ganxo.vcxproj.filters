@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="disasm">
+      <UniqueIdentifier>{00e87b8b-4759-4627-986e-18052ca6ceaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b3a4c8a9-5208-4ef4-84ab-5ec5f0f0573a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="papi">
+      <UniqueIdentifier>{9b34bc3b-aaae-4b05-8e85-6297f5dc8937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{c1116e08-7bf2-422b-b7ee-5513320ca7b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="disasm.h">
+      <Filter>disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="private.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ganxo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="disasm-x86-impl.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="win-papi-impl.c">
+      <Filter>papi</Filter>
+    </ClCompile>
+    <ClCompile Include="ds.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="memory.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="ganxo.c">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
